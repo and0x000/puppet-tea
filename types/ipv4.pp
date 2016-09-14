@@ -1,1 +1,1 @@
-type Dns::Ipv4 = Pattern[/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/]
+type Tea::Ipv4 = Pattern[/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/]

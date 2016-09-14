@@ -1,1 +1,1 @@
-type Dns::Ip_address = Variant[Dns::Ipv4, Dns::Ipv6]
+type Tea::Ip_address = Variant[Tea::Ipv4, Tea::Ipv6]
