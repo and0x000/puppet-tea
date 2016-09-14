@@ -29,6 +29,8 @@ Installing this module will make it so that puppet [auto-loads](https://docs.pup
 * type IPv4  -- Matches valid IPv4 address
 * type IPv6  -- Matches valid IPv6 address
 * type ipaddress  -- Matches valid IPv4 or IPv6 address
+* type IPv4_cird  -- Matches valid IPv4 address in CIDR notation
+* type IPv6_cidr  -- Matches valid IPv6 address in CIDR notation
 
 ### Filesystem types
 * type UnixPath  -- paths on Unix-like operating systems
