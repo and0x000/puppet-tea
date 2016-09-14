@@ -26,6 +26,9 @@ Installing this module will make it so that puppet [auto-loads](https://docs.pup
 * type Port -- all valid TCP/UDP ports
 * type Privilegedport  -- ports which need rootly power to bind to
 * type Unprivilegedport  -- ports which do not need rootly power
+* type IPv4  -- Matches valid IPv4 address
+* type IPv6  -- Matches valid IPv6 address
+* type ipaddress  -- Matches valid IPv4 or IPv6 address
 
 ### Filesystem types
 * type UnixPath  -- paths on Unix-like operating systems
