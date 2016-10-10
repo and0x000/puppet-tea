@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-ruby '2.1.0'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.1.0'
+
 group :test do
   gem "rake"
   gem "puppet", ENV['PUPPET_GEM_VERSION'] || '~> 4.0'
