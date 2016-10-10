@@ -6,7 +6,7 @@ bundler_args: --without system_tests
 script: "bundle exec rake validate lint spec"
 matrix:
   fast_finish: true
-  #include:
+  include:
   #- rvm: 2.2.0
   #  env: BEAKER_set="docker/ubuntu-14.04"
   #  sudo: required
