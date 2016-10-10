@@ -35,7 +35,7 @@ Installing this module will make it so that puppet [auto-loads](https://docs.pup
 * `Puppetsource`: matches values that can be used for a file type source parameter
 * `Puppetcontent`: matches values that can be used for a file type content parameter
 
-### public types
+### private types
 * `fileuri`: Matches file:/// uris, used by Puppetsource
 * `puppeturi`: Matches puppet:/// uris, used by Puppetsource
 
