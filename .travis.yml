@@ -1,6 +1,6 @@
 ---
 before_install:
-- sed -i -e '2s/.*/ruby ENV[\'RUBY\']/' Gemfile
+- sed -i -e "2s/.*/ruby ENV['RUBY']/" Gemfile
 sudo: false
 language: ruby
 cache: bundler
