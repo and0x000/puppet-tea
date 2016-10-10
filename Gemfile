@@ -31,9 +31,3 @@ group :development do
   gem "guard-rake"
 end
 
-group :integration do
-    gem "beaker"
-    gem "beaker-rspec"
-    gem "vagrant-wrapper"
-    gem 'serverspec'
-end
