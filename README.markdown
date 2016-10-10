@@ -46,3 +46,4 @@ This module is compatible with any platform puppet 4.4+ is compatible with.
 ## Development
 
 Please see CONTRIBUTING.md for how this module is developed, and how you can help.
+
