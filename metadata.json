@@ -1,12 +1,12 @@
 {
   "name": "puppet-tea",
-  "version": "0.2.4",
-  "author": "voxpupuli",
+  "version": "0.2.5",
+  "author": "voxpupuli and john.bond@icann.org",
   "summary": "A collection of useful composite datatypes to use as validators",
   "license": "Apache-2.0",
-  "source": "https://github.com/voxpupuli/puppet-tea",
-  "project_page": "https://github.com/voxpupuli/puppet-tea",
-  "issues_url": "https://github.com/voxpupuli/puppet-tea/issues",
+  "source": "https://github.com/icann-dns/puppet-tea",
+  "project_page": "https://github.com/icann-dns/puppet-tea",
+  "issues_url": "https://github.com/icann-dns/puppet-tea/issues",
   "dependencies": [],
   "operatingsystem_support": [ ]
 }

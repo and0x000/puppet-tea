@@ -1,3 +1,6 @@
+### 2016-10-24 0.2.5
+* Add host type which is a combination of fqdn and ip_address
+
 ### 2016-10-10 0.2.4
 * Add Puppet source to validate the source parameter of a file type
 * Add Puppet content to validate the content parameter of a file type
