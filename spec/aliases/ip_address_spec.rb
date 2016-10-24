@@ -13,7 +13,7 @@ if Puppet.version.to_f >= 4.5
         '2001:0db8::1'
       ].each do |value|
         describe value.inspect do
-          let(:params) {{ value: value }}
+          let(:params) { { value: value } }
           it { is_expected.to compile }
         end
       end
@@ -28,8 +28,8 @@ if Puppet.version.to_f >= 4.5
         '2001:0db8:85a3:000000:0000:8a2e:0370:7334'
       ].each do |value|
         describe value.inspect do
-          let(:params) {{ value: value }}
-          it { is_expected.to compile.and_raise_error(/parameter 'value' expects a match for/) }
+          let(:params) { { value: value } }
+          it { is_expected.to compile.and_raise_error(%r{parameter 'value' expects a match for}) }
         end
       end
     end

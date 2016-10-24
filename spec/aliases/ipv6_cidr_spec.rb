@@ -9,7 +9,7 @@ if Puppet.version.to_f >= 4.5
         '2001:0db8::1/64'
       ].each do |value|
         describe value.inspect do
-          let(:params) {{ value: value }}
+          let(:params) { { value: value } }
           it { is_expected.to compile }
         end
       end
@@ -27,8 +27,8 @@ if Puppet.version.to_f >= 4.5
         '2001:0db8::1/1000'
       ].each do |value|
         describe value.inspect do
-          let(:params) {{ value: value }}
-          it { is_expected.to compile.and_raise_error(/parameter 'value' expects a match for Tea::Ipv6_cidr/) }
+          let(:params) { { value: value } }
+          it { is_expected.to compile.and_raise_error(%r{parameter 'value' expects a match for Tea::Ipv6_cidr}) }
         end
       end
     end

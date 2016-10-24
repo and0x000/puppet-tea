@@ -3,13 +3,13 @@ require 'spec_helper'
 if Puppet.version.to_f >= 4.5
   describe 'test::fqdn', type: :class do
     describe 'valid handling' do
-      %w{
+      %w(
         example
         example.com
         www.example.com
-      }.each do |value|
+      ).each do |value|
         describe value.inspect do
-          let(:params) {{ value: value }}
+          let(:params) { { value: value } }
           it { is_expected.to compile }
         end
       end
@@ -18,20 +18,19 @@ if Puppet.version.to_f >= 4.5
     describe 'invalid path handling' do
       context 'garbage inputs' do
         [
-          [ nil ],
-          [ nil, nil ],
+          [nil],
+          [nil, nil],
           { 'foo' => 'bar' },
-          { },
+          {},
           '',
-          "www www.example.com",
+          'www www.example.com'
         ].each do |value|
           describe value.inspect do
-            let(:params) {{ value: value }}
-            it { is_expected.to compile.and_raise_error(/parameter 'value' expects a match for Tea::Fqdn/) }
+            let(:params) { { value: value } }
+            it { is_expected.to compile.and_raise_error(%r{parameter 'value' expects a match for Tea::Fqdn}) }
           end
         end
       end
-
     end
   end
 end
