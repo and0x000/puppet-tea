@@ -1,3 +1,6 @@
+### 2016-10-24 0.2.6
+* Add syslog level type
+
 ### 2016-10-24 0.2.5
 * Add host type which is a combination of fqdn and ip_address
 
