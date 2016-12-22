@@ -24,7 +24,7 @@ if Puppet.version.to_f >= 4.5
           [nil, nil],
           { 'foo' => 'bar' },
           {},
-          '',
+          ''
         ].each do |value|
           describe value.inspect do
             let(:params) { { value: value } }
