@@ -1,5 +1,5 @@
 {
-  "name": "puppet-tea",
+  "name": "icann-tea",
   "version": "0.2.5",
   "author": "voxpupuli and john.bond@icann.org",
   "summary": "A collection of useful composite datatypes to use as validators",
