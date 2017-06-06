@@ -1,3 +1,6 @@
+### 2016-10-24 0.2.9
+*  Add base64 and base32 types
+
 ### 2016-10-24 0.2.8
 * Bump version
 
