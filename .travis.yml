@@ -1,5 +1,6 @@
 ---
 sudo: false
+dist: trusty
 language: ruby
 cache: bundler
 bundler_args: --without system_tests development
@@ -17,18 +18,20 @@ matrix:
   include:
   - rvm: 2.1.9
     env: PUPPET_VERSION="~> 4.0" CHECK=test
-  - rvm: 2.2.5
+  - rvm: 2.2.6
     env: PUPPET_VERSION="~> 4.0" CHECK=test
-  - rvm: 2.3.1
-    env: PUPPET_VERSION="~> 4.0" CHECK=build DEPLOY_TO_FORGE=yes
-  - rvm: 2.3.1
+  - rvm: 2.3.3
+    env: PUPPET_VERSION="~> 4.0" CHECK=test
+  - rvm: 2.4.0
+    env: PUPPET_VERSION="~> 4.0" CHECK=test
+  - rvm: 2.4.0
     env: PUPPET_VERSION="~> 4.0" CHECK=rubocop
-  - rvm: 2.3.1
-    env: PUPPET_VERSION="~> 4.0" CHECK=test
-  - rvm: 2.4.0-preview1
-    env: PUPPET_VERSION="~> 4.0" CHECK=test
-  allow_failures:
-    - rvm: 2.4.0-preview1
+  - rvm: 2.4.0
+    env: PUPPET_VERSION="~> 4.0" CHECK=build DEPLOY_TO_FORGE=yes
+branches:
+  only:
+  - master
+  - /^v\d/
 notifications:
   email: false
 deploy:
@@ -37,7 +40,7 @@ deploy:
     branch: ha-bug-puppet-forge
   user: icann
   password:
-    secure: "Q/HsnRt7Z6bFL0xd62naevDpMOylW/wGQBxl0A9yW3obcGm/AvJFqiWPJiHdssqhqYFlht8DYYOnqx9GmVIoxcA2cQGso2SQgM+OF9xvuXoBlWjFKFtsh5VxIo3cCpT2bgoqqivmb5FWNl06TlpSDgNe2cWI9Y5x1qIrTkSjZ/7hT8aaYi91lG4rhVyYNzhBD882zGu23Zj1SP8E1Xqkxq1wqIbl6VBVkRXyhcLa97uqtm3Vd4ea2BsAFXcHlP/gGYyEXlDll9arR+pz2y09AcmpWs1P7RziS3zesyE3MaRjtkP7CKP96kLP9JUeuINgkChyjZtXWUFygsWorSd+RN8xGbJjJIyXHKDrCd4t25pawdOTT0DfC5WkgMBWxSN+IbCxtbjIcav3CisNs1Rvko/ZRD13b5Mms8O65kEkr2UswELVY96QM5fcB5Oedhuda+QI7cDFIQdwpCORI4Y/XO69cbIbIRonDo79o61/tI2ml+UhdaxG3imNqWP7IH4UCTQDVJJlMowZSYZPy0Fpgk7e+9P8oYGU5/i3KqhaLXDF0I9ZVSpcHW97sUoSbv7ZJL5zOqKHoZGHmTvvMizJnY+lEeApjbCjJOiHIFs63Kn1CT8ynMtKpjZ/276kZ5E3JUln3LvWGk3sI6npO7v2q9Yz/Q4IuaVj/GdhWK55VAI="
+    secure: "QgYuMhjO7T7tpV7L1l06+rba9wW6yh9mOkr/5XZ+MKt5omuc9BsJVHEChJfCyPZbxyMRD635lTnxzLkQeWS1WzcxyxYHQv4gB8gVumbrixDbAWzLi9GUpvGgcn/i8IaVePQStwMZxLCnYbm6ghb85m5uFuHC53sT3Q3GSW9LZdGY1WzYLIg9NClxReT2Nmxiz0GBEn5Vln+dtFHCYrQoqjJbrIvey3hrGbSZkEXP8BblyEzKSxgbFklSKxtnC2kmTpwVmkRKU04dzgess/s4i/2qaCFfakN8RVJnb8TzAC7UWgOdcY0vsjMzSR71r29cSllHsutN/pU8pjukYmBgvKSTdgp54H9PST1z/tjpjtqFMVDeylrWCt0WWxG2M0mCdk414/Atft49LDAoscLugKOPHEStVpLLnu6rd6Q7l67cZwR0YxnaxKXi7/cQ5p703oubxJ6RtMkucCuk1HNo04JBgOPi1clKgOpaV37Kyk9cTzVrBaVbqYSiMJrFXuKQQ+TSibGq2M0XfJxNI784qm/5tOi/62CkkdN4SqYlbWldRtTg4hdfqtROyrUkSJEqINakI7OPtfGw2jjYML6IvLsz0C5/vhTrXPpxdo1r5GcB8EMC7yyXh/DGK8F+lCwltegCK7KDHCgzl65dmn68sgZb9kFpd5TD9s48MP4cKVU="
   on:
     tags: true
     # all_branches is required to use tags
