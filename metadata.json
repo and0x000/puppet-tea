@@ -1,6 +1,6 @@
 {
   "name": "icann-tea",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "author": "voxpupuli and john.bond@icann.org",
   "summary": "A collection of useful composite datatypes to use as validators",
   "license": "Apache-2.0",

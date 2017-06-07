@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/icann-tea/puppet-tea.svg?branch=master)](https://travis-ci.org/icann-tea/puppet-tea)
+[![Build Status](https://travis-ci.org/icann-dns/puppet-tea.svg?branch=master)](https://travis-ci.org/icann-tea/puppet-tea)
 [![Puppet Forge](https://img.shields.io/puppetforge/v/icann/tea.svg?maxAge=2592000)](https://forge.puppet.com/icann/tea)
 [![Puppet Forge Downloads](https://img.shields.io/puppetforge/dt/icann/tea.svg?maxAge=2592000)](https://forge.puppet.com/icann/tea)
 #### Table of Contents
