@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/icann-tea/puppet-tea.svg?branch=master)](https://travis-ci.org/icann-tea/puppet-tea)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/icann/tea.svg?maxAge=2592000)](https://forge.puppet.com/icann/tea)
+[![Puppet Forge Downloads](https://img.shields.io/puppetforge/dt/icann/tea.svg?maxAge=2592000)](https://forge.puppet.com/icann/tea)
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -34,6 +37,8 @@ Installing this module will make it so that puppet [auto-loads](https://docs.pup
 * `IPv6_cidr`: Matches valid IPv6 address in CIDR notation
 * `Puppetsource`: matches values that can be used for a file type source parameter
 * `Puppetcontent`: matches values that can be used for a file type content parameter
+* `Base64`: matches base64 strings
+* `Base32`: matches base64 strings
 
 ### private types
 * `fileuri`: Matches file:/// uris, used by Puppetsource
