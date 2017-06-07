@@ -1,4 +1,7 @@
 ### 2017-06-07 0.2.11
+*  fix file extention
+
+### 2017-06-07 0.2.11
 *  add Syslog Facility type
 
 ### 2017-06-07 0.2.10
