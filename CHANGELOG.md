@@ -1,3 +1,6 @@
+### 2017-06-07 0.2.11
+*  add Syslog Facility type
+
 ### 2017-06-07 0.2.10
 *  update docs
 
