@@ -42,7 +42,7 @@ if Puppet.version.to_f >= 4.5
           'asdasddasd3453453=======',
           'asdaSddasd',
           'asdasddasd1',
-          'asdasddasd9',
+          'asdasddasd9'
         ].each do |value|
           describe value.inspect do
             let(:params) { { value: value } }
