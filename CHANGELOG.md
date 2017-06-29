@@ -1,3 +1,6 @@
+### 2017-06-29 0.2.13
+*  fix error in base64 character set
+
 ### 2017-06-07 0.2.12
 *  fix file extention
 
