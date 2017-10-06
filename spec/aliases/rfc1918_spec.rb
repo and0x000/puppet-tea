@@ -8,7 +8,7 @@ if Puppet.version.to_f >= 4.5
         '192.168.255.255',
         '192.168.0.0',
         '10.0.23.89',
-        '172.25.32.167',
+        '172.25.32.167'
       ].each do |value|
         describe value.inspect do
           let(:params) { { value: value } }
