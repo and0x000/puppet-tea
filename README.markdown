@@ -33,7 +33,7 @@ Installing this module will make it so that puppet [auto-loads](https://docs.pup
 * `IPv4`: Matches valid IPv4 address
 * `IPv6`: Matches valid IPv6 address
 * `ipaddress`: Matches valid IPv4 or IPv6 address
-* `IPv4_cird`: Matches valid IPv4 address in CIDR notation
+* `IPv4_cidr`: Matches valid IPv4 address in CIDR notation
 * `IPv6_cidr`: Matches valid IPv6 address in CIDR notation
 * `Puppetsource`: matches values that can be used for a file type source parameter
 * `Puppetcontent`: matches values that can be used for a file type content parameter
